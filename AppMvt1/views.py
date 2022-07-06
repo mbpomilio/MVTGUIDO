@@ -8,21 +8,21 @@ from django.template import Context, Template, loader
 
 def familia(request):
 
-    pariente1 = Familia(nombre="Belen", parentezco="Hermana", edad="31")
+    pariente1 = Familia(nombre="Belen", parentezco="Hermana", fe_nac='1991-10-11')
     pariente1.save()
     texto1 = f"Pariente agregado: {pariente1.nombre}"
 
     
-    pariente2 = Familia(nombre="Carlos", parentezco="Papa", edad="65")
+    pariente2 = Familia(nombre="Carlos", parentezco="Hermano", fe_nac='1989-12-15')
     pariente2.save()
     texto2 = f"Pariente agregado: {pariente2.nombre} "
 
     
-    pariente3 = Familia(nombre="Pepe", parentezco="Tio", edad="55")
+    pariente3 = Familia(nombre="Pepe", parentezco="Tio", fe_nac='1966-11-25')
     pariente3.save()
     texto3 = f"Pariente agregado: {pariente3.nombre}"
 
-    return HttpResponse(texto1 + "-" + texto2 + "-" + texto3)
+    return HttpResponse(texto1 + " - " + texto2 + " - " + texto3)
     
 def inicio(request):
 
