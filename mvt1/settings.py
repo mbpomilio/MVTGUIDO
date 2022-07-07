@@ -55,7 +55,7 @@ ROOT_URLCONF = 'mvt1.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ["C:/Users/elgui/Desktop/coder/final/mvt1/AppMvt1/templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
